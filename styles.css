@@ -93,9 +93,6 @@ body {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   display: grid;
-
-
-
 }
 
 .upper-icon,
@@ -103,15 +100,16 @@ body {
 .lower-icon,
 .lower-text {
   border: 1px solid salmon;
-
 }
 
 
 .header {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   background-color: whitesmoke;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  position: relative;
+  box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.6);
 }
 
 .header-upper {
@@ -147,11 +145,10 @@ body {
 
 
 .header-lower {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-
 }
 
 .header-lower-left {
@@ -174,6 +171,7 @@ body {
 
 .hi-there {
   align-self: end;
+  font-size: 0.9rem;
 }
 
 .header-lower-right {
@@ -184,11 +182,13 @@ body {
 }
 
 .header button {
-  margin: 1.6rem 1rem;
+  margin: 0.7rem 1rem;
   background-color: rgb(46, 126, 211);
   color: whitesmoke;
   border-radius: 20px;
   border: 0px solid transparent;
+  font-weight: bolder;
+  font-size: 1rem;
 
 }
 
@@ -199,6 +199,7 @@ body {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 1rem 0 4rem 0;
 }
 
 .projects {
@@ -208,9 +209,6 @@ body {
   grid-template-rows: 1fr 25fr;
   padding: 1rem;
   align-items: start;
-
-
-
 }
 
 .projects > p {
@@ -222,17 +220,20 @@ body {
 .card-container {
   grid-row: 2 / 3;
   display: grid;
-  grid-template-columns: repeat(2,  minmax(250px, 1fr));
+  grid-template-columns: repeat(2,  minmax(200px, 1fr));
   gap: 15px;
   align-content: start;
 }
 
 .card-container .card {
   background-color: whitesmoke;
-  border-radius: 20px;
+  border-radius: 10px;
   display: grid;
   padding: 1rem;
-  height: 15rem;
+  height: 13.7rem;
+  border-left: 10px solid orange;
+  position: relative;
+  box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.6);
 }
 
 .card-container .title {
@@ -245,7 +246,6 @@ body {
 .card-container p:nth-child(2) {
   padding-right: 3rem;
   color: grey;
-  /* align-items: start; */
 }
 
 .card-icon {
@@ -269,12 +269,14 @@ body {
 
 .annoucements-container {
   background-color: whitesmoke;
-  border-radius: 20px;
+  border-radius: 10px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 0.5rem 1rem 0 1rem;
   width: 18rem;
   height: 21rem;
+  position: relative;
+  box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.6);
 }
 
 .annoucements > p {
@@ -302,8 +304,6 @@ body {
   font-size: 0.8rem;
 }
 
-
-
 .trending {
   border: 1px solid blueviolet;
   grid-column: 2 / 3;
@@ -319,11 +319,14 @@ body {
 
 .trending-container {
   background-color: whitesmoke;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 1rem;
   width: 18rem;
+  height: 18rem;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+  box-shadow: 0px 5px 8px -5px rgba(0, 0, 0, 0.6);
 
 }
 
@@ -340,4 +343,9 @@ body {
 
 .trending-container p:nth-child(2) {
   align-self: end;
+  font-size: 0.9rem;
+}
+
+.trending-container p:nth-child(3) {
+  color: grey;
 }
